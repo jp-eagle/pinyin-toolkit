@@ -6,14 +6,21 @@
     {% include header.html %}
   </head>
   <body>
-    <div id="header">
-      <a href="index.html">
-        <img class="header-image" src="images/header.jpg" alt="Pinyin Toolkit" />
-      </a>
-    </div>
+    {% include banner.html %}
     
     <div id="content">
       {% include linksheader.html %}
+      
+      <div>
+        <h3>Contents:</h3>
+        
+        <ul>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#settingup">Setting Up A Deck</a></li>
+        </ul>
+      </div>
+      
+      <hr />
       
       <div>
         <h1><a name="installation">Installation</a></h1>
@@ -125,6 +132,8 @@
           </li>
         </ol>
       </div>
+  
+      <hr />
   
       <div>
         <h1><a name="settingup">Setting Up A Deck</a></h1>
